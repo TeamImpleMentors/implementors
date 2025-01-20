@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 40% 98%;
+  --foreground: 222.2 84% 4.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+
+  --primary: 199 89% 48%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 199 89% 48%;
+
+  --radius: 0.75rem;
+
+  --hover-text: #000000; /* Pure black for light mode */
+
+  --primary-light: #22d3ee;
+  --primary-mid: #0ea5e9;
+  --primary-dark: #3b82f6;
+  --accent-light: #a5f3fc;
+  --accent-dark: #0369a1;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --background-start: #f8fafc;
+  --background-end: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 199 89% 48%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 199 89% 48%;
+  --hover-text: #000000; /* Pure black for dark mode */
+}
+
+/* New Light Theme Color Palette */
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-light: #22d3ee;
+    --primary-mid: #0ea5e9;
+    --primary-dark: #3b82f6;
+    --accent-light: #a5f3fc;
+    --accent-dark: #0369a1;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --error: #ef4444;
+    --background-start: #f8fafc;
+    --background-end: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+  }
+}
+
+/* Glass Morphism */
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-morphism {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animated Background */
+.animated-bg {
+  background: linear-gradient(45deg, var(--primary-light), var(--primary-mid), var(--primary-dark));
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Enhanced Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--accent-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--primary-mid), var(--primary-dark));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Card Hover Effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 10px 10px -5px rgba(15, 23, 42, 0.04);
+}
+
+/* Floating Animation */
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Line Animation */
+.line-progress {
+  transition: transform 0.5s ease-out;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: textGradient 5s ease infinite;
+}
+
+@keyframes textGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Add these new styles to your existing globals.css */
+
+.text-shadow-lg {
+  text-shadow: 0 1px 0 rgb(0 0 0 / 0.1), 0 2px 0 rgb(0 0 0 / 0.1), 0 4px 6px rgb(0 0 0 / 0.1), 0 8px 12px
+    rgb(0 0 0 / 0.1);
+}
+
+.dark .text-shadow-lg {
+  text-shadow: 0 1px 0 rgb(255 255 255 / 0.1), 0 2px 0 rgb(255 255 255 / 0.1), 0 4px 6px rgb(0 0 0 / 0.3), 0 8px 12px
+    rgb(0 0 0 / 0.3);
+}
+
+/* Update hover text colors */
+.hover-text-gradient {
+  @apply transition-all duration-300;
+}
+
+.hover-text-gradient:hover {
+  @apply bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent;
+}
+
+/* Add these new hover utilities */
+.hover-text-dark {
+  @apply transition-colors duration-300;
+}
+
+.hover-text-dark:hover {
+  color: var(--hover-text);
+}
+
