@@ -115,7 +115,12 @@ export function ServicesSection() {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      
+                      <div className="p-6 pt-0 border-t border-white/10">
+                        <p className="text-muted-foreground">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
                         <div className="mt-4 flex gap-4">
                           <motion.button
                             whileHover={{ scale: 1.05 }}
