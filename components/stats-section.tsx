@@ -5,42 +5,36 @@ import { motion } from "framer-motion"
 const stats = [
   {
     number: "12+",
-    label: "Years of Experience",
+    title: "Years of Experience",
     description:
-      "Training students for careers in Public Policy through modules ranging from Stakeholder Assessment to Inter-Governmental Organisations",
-    icon: "/img/experience-icon.png",
+      "in training students for careers in Public Policy through modules ranging from Stakeholder Assessment to the Functioning of Inter-Governmental Organisations along with mentoring them for entrance examinations such as UPSC, CDS, CUET and CLAT.",
+    icon: "⭐️",
   },
   {
     number: "5+",
-    label: "Years Since Establishment",
+    title: "Years Since Establishment",
     description:
-      "Creating realization for academic exposure in policy making before students occupy positions in Global Political Order",
-    icon: "/img/establishment-icon.png",
+      "For two decades, ImpleMENTORS have strived to create a realisation as for the significance of academic exposure in the form of policy making before students finally go on to occupy positions of relevance in shaping the Global Political Order.",
+    icon: "🌟",
   },
   {
     number: "5",
-    label: "Lakhs Plus",
+    title: "Lakhs Plus",
     description: "Students trained in the areas of Skill Development and Academia",
-    icon: "/img/students-icon.png",
+    icon: "👥",
   },
   {
     number: "25+",
-    label: "International Workshops",
+    title: "International Workshops",
     description:
-      "Collaborated with Universities abroad, exploring skills like communication, career building and leadership",
-    icon: "/img/workshop-icon.png",
+      "Collaborated with Universities abroad, exploring skills like communication, career building and leadership.",
+    icon: "🌍",
   },
 ]
 
 export function StatsSection() {
   return (
-    <section className="relative py-24 overflow-hidden">
-      {/* Animated background */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-600/5 via-blue-600/10 to-blue-600/5" />
-        <div className="absolute inset-0 bg-[url('/img/grid.svg')] opacity-10" />
-      </div>
-
+    <section className="relative py-24 overflow-hidden bg-slate-900">
       <div className="container relative">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
@@ -50,54 +44,41 @@ export function StatsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="relative group"
+              className="relative"
             >
-              {/* Glowing border */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200" />
-
-              {/* Glass card */}
-              <div className="relative bg-white/10 dark:bg-black/10 backdrop-blur-xl rounded-2xl border border-white/20 dark:border-white/10 p-6">
-                {/* Floating icon */}
-                <motion.div
-                  initial={{ y: 0 }}
-                  animate={{ y: [-5, 5, -5] }}
-                  transition={{ repeat: Number.POSITIVE_INFINITY, duration: 3, ease: "easeInOut" }}
-                  className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-900 to-blue-700 p-2 shadow-lg"
-                >
-                  <img src={stat.icon || "/placeholder.svg"} alt="" className="w-full h-full object-contain" />
-                </motion.div>
-
-                <div className="pt-6 text-center">
-                  <motion.h3
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    className="text-4xl font-bold bg-gradient-to-r from-blue-900 to-blue-600 text-transparent bg-clip-text mb-2"
-                  >
-                    {stat.number}
-                  </motion.h3>
-                  <p className="font-semibold mb-4 group-hover:text-blue-400 transition-colors">{stat.label}</p>
-                  <p className="text-sm text-muted-foreground">{stat.description}</p>
+              <div
+                className={`relative bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 p-6 glow-${index + 1}`}
+              >
+                {/* Icon */}
+                <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-2xl mb-4">
+                  {stat.icon}
                 </div>
 
-                {/* Animated border lines */}
-                <div className="absolute inset-0 rounded-2xl transition-transform duration-700">
-                  <div className="absolute inset-0 border-2 border-blue-400/20 rounded-2xl" />
-                  <div className="absolute inset-[2px] border border-blue-400/20 rounded-2xl rotate-3 group-hover:rotate-0 transition-transform duration-700" />
-                  <div className="absolute inset-[4px] border border-blue-400/20 rounded-2xl -rotate-3 group-hover:rotate-0 transition-transform duration-700" />
+                {/* Content */}
+                <div>
+                  <h3 className="text-4xl font-bold text-blue-400 mb-2">{stat.number}</h3>
+                  <p className="font-semibold text-white mb-4">{stat.title}</p>
+                  <p className="text-sm text-slate-400">{stat.description}</p>
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
       </div>
-
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 -left-1/4 w-96 h-96 bg-blue-900/20 rounded-full filter blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-cyan-400/20 rounded-full filter blur-3xl animate-pulse delay-1000" />
-      </div>
+      <style jsx>{`
+  .glow-1 {
+    box-shadow: 0 4px 20px -2px rgba(59, 130, 246, 0.5);
+  }
+  .glow-2 {
+    box-shadow: 0 4px 20px -2px rgba(14, 165, 233, 0.5);
+  }
+  .glow-3 {
+    box-shadow: 0 4px 20px -2px rgba(6, 182, 212, 0.5);
+  }
+  .glow-4 {
+    box-shadow: 0 4px 20px -2px rgba(45, 212, 191, 0.5);
+  }
+`}</style>
     </section>
   )
 }
