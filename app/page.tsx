@@ -5,9 +5,11 @@ import { ServicesSection } from "@/components/services-section"
 import { TeamSection } from "@/components/team-section"
 import { CoordinatorsSection } from "@/components/coordinators-section"
 import { GlimpsesSection } from "@/components/glimpses-section"
+import { TestimonialSection } from "@/components/testimonial-section"
 import { JourneySection } from "@/components/journey-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
+import { ClimateSummitPopup } from "@/components/climate-summit-popup"
 
 export default function Home() {
   return (
@@ -19,9 +21,10 @@ export default function Home() {
       <TeamSection />
       <CoordinatorsSection />
       <GlimpsesSection />
-   
+      <TestimonialSection />
       <JourneySection />
       <ContactSection />
+      <ClimateSummitPopup />
       <Footer />
     </main>
   )

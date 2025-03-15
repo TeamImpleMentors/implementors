@@ -23,18 +23,7 @@ const coordinators = [
     image: "/12.png",
     instagram: "https://www.instagram.com/goyalnivedita/",
   },
-  {
-    name: "Ms. Asmi Luthra",
-    role: "Regional Coordinator: Sonipat, Haryana",
-    image: "/17.png",
-    linkedin: "https://www.linkedin.com/in/asmi-luthra-0030122a9/",
-  },
-  {
-    name: "Ms. Dia Atal",
-    role: "Social media Manager",
-    image: "/16.png",
-    linkedin: "https://www.linkedin.com/in/dia-atal/",
-  },
+
 ]
 
 export function CoordinatorsSection() {
