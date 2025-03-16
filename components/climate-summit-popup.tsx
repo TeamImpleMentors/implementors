@@ -74,7 +74,7 @@ export function ClimateSummitPopup() {
                     transition={{ delay: 0.2 }}
                   >
                     <h2 className="text-3xl font-bold text-white mb-2">Climate Justice Summit 2024</h2>
-                    <p className="text-emerald-100 text-lg">Shape the Future of Our Planet</p>
+                    <p className="text-emerald-100 text-lg">A Multi-Stakeholder Dialogue on Climate Justice and Sustainability</p>
                   </motion.div>
                 </div>
 
