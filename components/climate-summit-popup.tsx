@@ -61,7 +61,7 @@ export function ClimateSummitPopup() {
               {/* Header with gradient background */}
               <div className="relative h-24 bg-gradient-to-r from-green-500 to-emerald-600 flex items-center justify-center overflow-hidden">
                 <h2 className="text-xl md:text-2xl font-bold text-white text-center px-4 drop-shadow-md">
-                  Climate Justice Summit 2025
+                  Climate Justice Summit 2024
                 </h2>
                 <button
                   onClick={closePopup}
@@ -86,7 +86,7 @@ export function ClimateSummitPopup() {
                     </div>
                     <div>
                       <h3 className="font-medium">Date</h3>
-                      <p className="text-sm text-muted-foreground">April 19, 2025</p>
+                      <p className="text-sm text-muted-foreground">April 19th, 2025</p>
                     </div>
                   </div>
 
@@ -96,7 +96,7 @@ export function ClimateSummitPopup() {
                     </div>
                     <div>
                       <h3 className="font-medium">Venue</h3>
-                      <p className="text-sm text-muted-foreground">India International Centre, Delhi</p>
+                      <p className="text-sm text-muted-foreground">India International Centre, New Delhi</p>
                     </div>
                   </div>
 
@@ -104,7 +104,10 @@ export function ClimateSummitPopup() {
                     <div className="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center flex-shrink-0">
                       <Clock className="h-4 w-4 text-green-600 dark:text-green-400" />
                     </div>
-              
+                    <div>
+                      <h3 className="font-medium">Time</h3>
+                      <p className="text-sm text-muted-foreground">09:00 AM - 05:00 PM</p>
+                    </div>
                   </div>
                 </div>
 
