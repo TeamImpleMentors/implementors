@@ -28,7 +28,7 @@ export function ContactSection() {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-primary" />
-                <span>info@implementors.com</span>
+                <span>imple.mentorsofficial@gmail.com</span>
               </div>
             </div>
           </motion.div>
