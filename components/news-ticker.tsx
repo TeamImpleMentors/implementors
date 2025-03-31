@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 const news = [
   {
     text: "Model United Nations at the SCINDIA School, Gwalior on (12-14 April, 2025) - Register now for our flagship event",
-    highlight: true,
+    highlight: false,
     link: "https://www.scimun.org/",
   },
   {
