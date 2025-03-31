@@ -28,7 +28,7 @@ const teamMembers = [
   },
   {
     name: "Mr. Ishpreet Singh Luthra",
-    role: "Associate Academic Trainer and Head of Tech & Social Media",
+    role: "Academic Trainer, CTO & Director-Outreach",
     image: "/product4.png",
     linkedin: "https://www.linkedin.com/in/ishpreet-singh-luthra-197045205/",
     details: "ishpreetsinghluthra.html",
