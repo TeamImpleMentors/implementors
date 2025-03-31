@@ -42,7 +42,7 @@ export function ClimateSummitPopup() {
             onClick={() => setIsOpen(true)}
             className="relative bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white shadow-lg border-0 px-3 py-2 text-sm font-bold transition-transform hover:scale-105 active:scale-95"
           >
-            Climate Summit
+            Climate Justice Summit
           </Button>
         </div>
       )}
@@ -61,7 +61,7 @@ export function ClimateSummitPopup() {
               {/* Header with gradient background */}
               <div className="relative h-24 bg-gradient-to-r from-green-500 to-emerald-600 flex items-center justify-center overflow-hidden">
                 <h2 className="text-xl md:text-2xl font-bold text-white text-center px-4 drop-shadow-md">
-                  Climate Justice Summit 2024
+                  Climate Justice Summit 2025
                 </h2>
                 <button
                   onClick={closePopup}
@@ -117,7 +117,7 @@ export function ClimateSummitPopup() {
                     asChild
                   >
                     <a
-                      href="https://forms.gle/climatejusticesummit2024"
+                      href="https://forms.gle/Q9HTh7kJqBaA7nuv9"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2"
